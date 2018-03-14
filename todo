@@ -1,0 +1,8 @@
+todo(){
+    if [[ ! ${1+x} ]]; then
+        vim ~/Documents/TODO.md
+    else
+        "$1" ~/Documents/TODO.md
+    fi
+}
+
