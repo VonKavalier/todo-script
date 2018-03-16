@@ -1,8 +1,15 @@
-todo(){
-    if [[ ! ${1+x} ]]; then
-        vim ~/Documents/TODO.md
-    else
-        "$1" ~/Documents/TODO.md
-    fi
-}
+#!/bin/bash
+
+if [[ ! ${1+x} ]]; then
+    vim ~/Documents/TODO.md
+elif [ $1 == "info" ]; then
+    echo -e "\e[1mÀ faire :\e[0m";
+    cat ~/Documents/TODO.md | grep --color=never -F "[ ]";
+    echo -e "\n\e[1mFait :\e[0m";
+    cat ~/Documents/TODO.md | grep --color=never -F "[x]";
+else
+    "$1" ~/Documents/TODO.md
+fi
+
+
 

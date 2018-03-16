@@ -1,13 +1,14 @@
 # todo-script
-Basic bash function to edit my TODO file
+Simple fonction bash pour éditer mon fichier de todo
 
-## How to install :
-- Simply put the function in your `~/.bashrc` or such
-- Do `source ~/.bashrc` to reload your shell
+## Comment installer :
+- Mettez le script dans un dossier de votre PATH (sinon faites `export PATH="$PATH:~/dossier-du-script"`
+- Donnez les permissions avec `chmod u+x todo`
 
-## How to use :
-- Run `todo` and the file will open with vim (as default)
-- You can specify an editor with `todo <editor name>` such as `subl` or `gedit`.
+## Comment utiliser :
+- Exécutez `todo` et le fichier s'ouvrira avec vim (par défaut)
+- Vous pouvez choisir un autre éditeur avec `todo <éditeur>` comme `subl` ou `gedit`.
+- Vous pouvez rajouter l'option `infos` pour afficher ce qui est fait et ce qui reste à faire
 
-## What now ?
-- Feel free to modify it and do anything you want, you don't even have to quote me :)
+## Et maintenant ?
+- Faites absolument ce que vous voulez de ce bout de code, vous avez même pas besoin de me citer :)
