@@ -10,5 +10,7 @@ Simple fonction bash pour éditer mon fichier de todo
 - Vous pouvez choisir un autre éditeur avec `todo <éditeur>` comme `subl` ou `gedit`.
 - Vous pouvez rajouter l'option `infos` pour afficher ce qui est fait et ce qui reste à faire
 
+![](https://framapic.org/WcWYMRKhGFdd/tEeHDVuOD8Bj.png)
+
 ## Et maintenant ?
 - Faites absolument ce que vous voulez de ce bout de code, vous avez même pas besoin de me citer :)
