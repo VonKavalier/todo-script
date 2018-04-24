@@ -1,13 +1,18 @@
 #!/bin/bash
 
-if [[ ! ${1+x} ]]; then
-    vim ~/Documents/TODO.md
-elif [ $1 == "infos" ]; then
-    echo -e "\e[1m\e[91mÀ faire :\e[0m";
-    cat ~/Documents/TODO.md | grep --color=never -F "[ ]";
-    echo -e "\n\e[1m\e[32mFait :\e[0m";
-    cat ~/Documents/TODO.md | grep --color=never -F "[x]";
-else
-    "$1" ~/Documents/TODO.md
-fi
+file="/Users/von/Documents/TODO.md"
 
+if [[ ! ${1+x} ]]; then
+    vim $file
+elif [ $1 == "infos" ]; then
+    echo -e "\033[1m\033[91mÀ faire :\033[0m";
+    cat $file | grep --color=never -F "[ ]";
+
+    echo -e "\n\033[1m\033[34mEn cours :\033[0m";
+    cat $file | grep --color=never -F "[~]";
+
+    echo -e "\n\033[1m\033[32mFait :\033[0m";
+    cat $file | grep --color=never -F "[x]";
+else
+    "$1" $file
+fi
