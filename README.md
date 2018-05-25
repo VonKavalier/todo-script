@@ -17,7 +17,7 @@ Simple fonction bash pour éditer mon fichier de todo
 - [x] Terminé
 ```
 
-![](https://framapic.org/n5WmNY9wHlHg/wnyc7muOlrFF.png)
+![Capture d'écran du ](https://framapic.org/oXYnNMzsalGP/4pUzrOJL8GIE.png)
 
 ## Et maintenant ?
 - Faites absolument ce que vous voulez de ce bout de code, vous avez même pas besoin de me citer :)
